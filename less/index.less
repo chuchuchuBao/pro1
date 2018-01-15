@@ -1,44 +1,232 @@
 @import "mixin";
+
 body {
-    background-color: #f3f3f3;
+    background-color: #fff;
 }
-.index{
+
+.index {
+    padding-bottom: 1.01rem;
     .width();
-    .banner{
-        width:100%;
+    .header {
+        width: 100%;
         height: 4.48rem;
         background: url("../img/banner.png") no-repeat;
         background-size: 100% 100%;
-        .top{
+        .top {
             width: 100%;
             display: flex;
             justify-content: space-between;
             padding-left: 0.2/7.5*100%;
             padding-right: 0.28/7.5*100%;
             padding-top: .3rem;
-            span{
+            span {
                 display: block;
             }
-            .vip{
+            .vip {
                 width: 1.12rem;
                 height: .5rem;
             }
-            .mymoney{
+            .mymoney {
                 color: #fff;
                 font-size: .28rem;
                 flex: 1;
                 margin-left: 1.82/7.5*100%;
             }
-            .gear{
+            .gear {
                 width: .34rem;
                 height: .34rem;
             }
         }
-        h2{
+        h2 {
             font-size: .59rem;
             color: #fff;
             text-align: center;
         }
+        .bottom {
+            width: 100%;
+            color: #fff;
+            position: relative;
+            .item {
+                width: 100%;
+                display: flex;
+                padding-top: .24rem;
+                .box {
+                    padding-left: 0.72/7.5*100%;
+                    flex: 1;
+                    .font {
+                        font-size: .29rem;
+                    }
+                    .num {
+                        font-size: .31rem;
+                    }
+                }
+                .last {
+                    position: relative;
+                    .icon-last {
+                        width: .3rem;
+                        height: .3rem;
+                        position: absolute;
+                        left: 0.64/7.5*100%;
+                        top: 0.07rem;
+                    }
+                }
+            }
+            .line {
+                width: 6.9rem;
+                height: 2.12rem;
+                position: absolute;
+                left: 0.3/7.5*100%;
+                bottom: 0;
 
+            }
+        }
+    }
+    .section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 1.11rem;
+        border-bottom: .04rem solid #f3f3f3;
+        font-size: .32rem;
+
+        .left {
+            flex: 1;
+            border-right: 2px solid #f3f3f3;
+            color: #ff524f;
+            justify-content: center;
+            display: -webkit-flex;
+            span {
+                display: inline-block;
+                width: .56rem;
+                height: .56rem;
+            }
+            i {
+                margin-left: .6/7.5*100%;
+            }
+        }
+        .right {
+            flex: 1;
+            color: #666;
+            justify-content: center;
+            display: -webkit-flex;
+            span {
+                display: inline-block;
+                width: .56rem;
+                height: .56rem;
+            }
+            i {
+                margin-left: .6/7.5*100%;
+            }
+        }
+    }
+    .warp {
+        display: flex;
+        width: 100%;
+        height: 2rem;
+        background: url("../img/bg.png") no-repeat;
+        background-size: 100% 100%;
+        border-bottom: .04rem solid #f3f3f3;
+        padding-top: .68rem;
+        .font{
+            font-size: .25rem;
+            color: #666;
+        }
+        .num{
+            font-size: .38rem;
+            color: #ff524f;
+        }
+        .left {
+            flex: 1;
+            padding-left: 1.43/7.5*100%;
+        }
+        .right {
+            flex: 1;
+            padding-left: 1.43/7.5*100%;
+        }
+    }
+    .main{
+        width: 100%;
+        height: 3.54rem;
+        padding: .08rem 0;
+        font-size: .25rem;
+        color: #666;
+        span{
+            margin-left: 0.44/7.5*100%;
+        }
+        .top{
+            width: 100%;
+            height: 1.68rem;
+            display: flex;
+            border-bottom: 1px solid #f3f3f3;
+            .box{
+                align-items: center;
+                flex: 1;
+                align-items: center;
+                display: -webkit-flex;
+                padding-left: 0.8/7.5*100%;
+            }
+            .b1{
+                border-right: 1px solid #f3f3f3;
+            }
+            .b1 img{
+                width: .82rem;
+                height: .83rem;
+            }
+            .b2 img{
+                width: .85rem;
+                height: .84rem;
+            }
+        }
+        .bottom{
+            width: 100%;
+            height: 1.68rem;
+            display: flex;
+            .box{
+                align-items: center;
+                flex: 1;
+                align-items: center;
+                display: -webkit-flex;
+                padding-left: 0.8/7.5*100%;
+            }
+            .b3{
+                border-right: 1px solid #f3f3f3;
+            }
+            .b3 img{
+                width: .84rem;
+                height: .86rem;
+            }
+            .b4 img{
+                width: .83rem;
+                height: .83rem;
+            }
+        }
+    }
+    .foot{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 1000;
+        width: 100%;
+        height: 1.01rem;
+        border-top: 1px solid #ececec;
+        padding: 0 0.72/7.5*100%;
+        display: flex;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: .21rem;
+        color: #666;
+        .active{
+            color: #ff524f;
+        }
+        .icon-box{
+            width: .43rem;
+            text-align: center;
+        .icon{
+            width: .43rem;
+            height: .43rem;
+        }
+        }
     }
 }
